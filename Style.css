@@ -1,0 +1,135 @@
+/* 기본 리셋 CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* 반응형 백그라운드 이미지 고정 세부세팅 */
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+input, textarea {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+/* 폰트 */
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  position: relative; /* 기준점 설정 */
+}
+
+/* 배경 */
+
+.top-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 902px;
+  min-width: 320px; 
+  background-color: #F2E9D8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  z-index: -1; 
+}
+
+
+header {
+width: 100%;
+height: 102px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 80px; /* 좌우 여백 */
+box-sizing: border-box;
+}
+
+h1 {
+  font-size: 0; 
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  font-weight: 500;
+}
+
+header {
+  padding-left: clamp(16px, 10vw, 320px);
+  padding-right: clamp(16px, 10vw, 320px);
+}
+
+.intro {
+  padding-left: clamp(16px, 10vw, 320px);
+  padding-right: clamp(16px, 10vw, 320px);
+}
+
+.features {
+  padding-left: clamp(16px, 10vw, 320px);
+  padding-right: clamp(16px, 10vw, 320px);
+}
+
+.gallery {
+  padding-left: clamp(16px, 10vw, 320px);
+  padding-right: clamp(16px, 10vw, 320px);
+}
+
+.articles {
+  padding-left: clamp(16px, 10vw, 320px);
+  padding-right: clamp(16px, 10vw, 320px);
+}
+
+footer {
+  padding-left: clamp(16px, 10vw, 320px);
+  padding-right: clamp(16px, 10vw, 320px);
+}
