@@ -154,11 +154,6 @@ header {
   font-size: clamp(24px, 30px, 48px);
   font-weight: 700;
   margin-bottom: 20px;
-  color: #D97652;
-}
-
-.point-text {
-  color: #D97652;
 }
 
 .intro-sub {
@@ -229,6 +224,11 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 .gallery-main {
   font-size: clamp(24px, 30px, 48px);
   font-weight: 700;
+  color: #D97652;
+}
+
+.sub-point {
+  color: #D97652;
 }
 
 .gallery-sub {
