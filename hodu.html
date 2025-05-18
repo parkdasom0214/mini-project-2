@@ -27,58 +27,98 @@
     <main>
 
       <section class="intro">
-        <p>Lorem Ipsum is simply
-          <br>dummy text of the printing and
-        </p>
+        <div class="intro-box">
+          <img src="./images/cat_1.png" alt="박스를 머리에 쓴 고양이" class="box-cat">
+          
+            <p class="intro-main">Lorem Ipsum is simply
+              <br>dummy text of the printing and
+            </p>
 
-        <p>Lorem Ipsum is simply dummy text of the printing and
-          <br>typesetting industry. 
-          <br>Lorem Ipsum has been the industry's standard dummy text
-          <br>ever since the 1500s, when an unknown
-        </p>
-        <button>Download</button>
-        <img src="./images/cat_1.png" alt="박스를 머리에 쓴 고양이">
+            <p class="intro-sub">Lorem Ipsum is simply dummy text of the printing and
+              <br>typesetting industry. 
+              <br>Lorem Ipsum has been the industry's standard dummy text
+              <br>ever since the 1500s, when an unknown
+            </p>
+            <button class="btn-download">Download</button>
+            
+        </div>
       </section>
       
       <section class="features">
-        <img src="./images/img_4.png" alt="누워있는 호두">
-        <p>Lorem Ipsum is simply
-          <br>dummy text of the printing
-          <br>and dummy text
-        </p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        </p>
-      </section>
+        <div class="features-box">
+          <img src="./images/img_4.png" alt="누워있는 호두" class="features-img">
+          <div class="features-text">
+            <p class="features-main">Lorem Ipsum is simply
+              <br>dummy text of the printing
+              <br>and dummy text
+            </p>
+            <p class="features-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </p>
+          </div>
+        </div>
+        </section>
 
       <section class="gallery">
-        <p>dummy text of the printing and dummy</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-        </p>
-        <ul>
-          <li><img src="./images/img_1.png" alt="캣타워에 누운 호두"></li>
-          <li><img src="./images/img_2.png" alt="벽을 바라보는 호두"></li>
-          <li><img src="./images/img_3.png" alt="정면을 바라보는 호두"></li>
-        </ul>
-        <div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-            <br>Ipsum is simply dummy text of the printing and typesetting industry. 
-          </p>
-          <button>Learn More</button>
+        <div class="gallery-box">
+          <div class="text-box">
+            <p class="gallery-main">dummy text of the printing and dummy</p>
+            <p class="gallery-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            </p>
+          </div>
+          <ul class="image-row">
+            <li><img src="./images/img_1.png" alt="캣타워에 누운 호두"></li>
+            <li><img src="./images/img_2.png" alt="벽을 바라보는 호두"></li>
+            <li><img src="./images/img_3.png" alt="정면을 바라보는 호두"></li>
+          </ul>
+
+        <div class="gallery-bottom">
+          <div class="gallery-bottom-txt">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+              <br>Ipsum is simply dummy text of the printing and typesetting industry. 
+            </p>
+          </div>
+          <button class="gallery-btn">Learn More</button>
         </div>
+        
       </section>
 
+        <input type="checkbox" id="modal-toggle" hidden>
+
       <section class="articles">
-        <p>Subscribe to our Blog post
-        </p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          <br>Lorem Ipsum has been the industry's standard dummy text 
-        </p>
-        <form class="search-form" action="#"></form>
-          <img src="./images/mail.svg" alt="">
-          <input type="text" placeholder="Enter your e-mail address">
-          <button type="submit">Subscribe</button>
+        <div class="articles-box">
+          <div class="article-text">
+            <p class="article-text-first">Subscribe to our Blog post
+            </p>
+            <p class="article-text-secound">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <br>Lorem Ipsum has been the industry's standard dummy text 
+            </p>
+          </div>
+          
+
+          <div class="search-form">
+            <div class="form-box">
+              <img src="./images/mail.svg" alt="" class="form-icon" />
+              <input type="text" class="email-input" placeholder="Enter your e-mail address"required />
+              <label for="modal-toggle" class="submit-btn">Subscribe</label>
+            </div>
+          </div>
+
+          <!-- 모달 구조 -->
+          <div class="modal-wrapper">
+            <div class="modal-box">
+              <img src="./images/cat.png" alt="호두얼굴" class="modal-img">
+              <div class="modal-text">
+                <p class="modal-first">Thank you!</p>
+                <p class="modal-secound">Lorem Ipsum is simply dummy text of the printing industry. </p>
+              </div>
+              <label for="modal-toggle" class="close-btn">OK! I Love HODU</label>
+            </div>
+          </div>
+
+            <img src="./images/img_5.png" alt="" class="articles-bg">
+        </div>
       </section>
 
     </main>
@@ -86,11 +126,14 @@
 
     <footer>
 
-      <img src="./images/Logo-fin.png" alt="호두로고">
-      <img src="./images/blog.png" alt="블로그 바로가기">
-      <img src="./images/instagram.png" alt="인스타그럄 바로가기">
-      <img src="./images/facebook.png" alt="페이스북 바로가기">
-      <img src="./images/youtube.png" alt="유튜브 바로가기">
+      <img src="./images/Logo-fin.png" alt="호두로고" class="footer-logo">
+
+      <div class="link-icon">
+        <button class="circle-btn"><img src="./images/blog.png" alt="블로그 바로가기" class="btn-icon"></button>
+        <button class="circle-btn"><img src="./images/instagram.png" alt="인스타그럄 바로가기" class="btn-icon"></button>
+        <button class="circle-btn"><img src="./images/facebook.png" alt="페이스북 바로가기" class="btn-icon"></button>
+        <button class="circle-btn"><img src="./images/youtube.png" alt="유튜브 바로가기" class="btn-icon"></button>
+      </div>
 
     </footer>
 
